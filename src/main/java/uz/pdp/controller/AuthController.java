@@ -21,11 +21,6 @@ public class AuthController {
         return "sign-in";
     }
 
-    @GetMapping("/sign-up")
-    public String signup(){
-        return "cabinet";
-    }
-
     @PostMapping("/sign-in")
     public String authenticate(@ModelAttribute UserDto userDto, Model model)
     {
